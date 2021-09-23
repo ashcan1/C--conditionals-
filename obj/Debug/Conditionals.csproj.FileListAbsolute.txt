@@ -1,0 +1,6 @@
+/home/ash/RiderProjects/test/Conditionals/Conditionals/bin/Debug/Conditionals.exe
+/home/ash/RiderProjects/test/Conditionals/Conditionals/bin/Debug/Conditionals.pdb
+/home/ash/RiderProjects/test/Conditionals/Conditionals/obj/Debug/Conditionals.csprojAssemblyReference.cache
+/home/ash/RiderProjects/test/Conditionals/Conditionals/obj/Debug/Conditionals.csproj.CoreCompileInputs.cache
+/home/ash/RiderProjects/test/Conditionals/Conditionals/obj/Debug/Conditionals.exe
+/home/ash/RiderProjects/test/Conditionals/Conditionals/obj/Debug/Conditionals.pdb
