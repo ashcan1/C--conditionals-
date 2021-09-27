@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics.Eventing.Reader;
+using System.Net;
 using System.Runtime.InteropServices;
 using System.Security.Cryptography;
 using System.Threading;
@@ -132,63 +134,119 @@ namespace Conditionals
                  display “You won"; otherwise, display “You lost". (To make sure the program is behaving correctly,
                 you can display the secret number on the console first.)
                 */
-            var number = new Random().Next(1, 10);
-           Console.WriteLine("Secret is ... ");
-    
-           for (int i = 0; i < 4; i++)
-           {
+/*  var number = new Random().Next(1, 10);
+Console.WriteLine("Secret is ... ");
 
-               Console.WriteLine("gusse the numebr");
-               var guss = Convert.ToInt32(Console.ReadLine());
+for (int i = 0; i < 4; i++)
+{
 
-               if (number == guss)
-               {
-                   Console.WriteLine("you won");
-                   return;
+    Console.WriteLine("gusse the numebr");
+    var guss = Convert.ToInt32(Console.ReadLine());
 
-               }
+    if (number == guss)
+    {
+        Console.WriteLine("you won");
+    return;
 
-           }
-
-           Console.WriteLine("you lost ");
-   
-            
-            
-        }
-
-
-
-
-        }
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    }
 
 }
+Console.WriteLine("you lost ");
+*/
 
+// Write a program and ask the user to enter a series of numbers separated by comma.
+// Find the maximum of the numbers and display it on the console.
+// For example, if the user enters “5, 3, 8, 1, 4", the program should display 8.
 
-
-
-
-
-
-            
-
+            /* Console.WriteLine("enter series of numbers:");
+             var input = Console.ReadLine();
  
-        
+             {
+                 
+             }
+ 
+ */
+            ////////////Write a program and continuously ask the user to enter different names
+            /// , until the user presses Enter (without supplying a name). Depending on the number of names provided,
+            /// display a message based on the above pattern.
+            ///
+
+
+
+
+
+
+// 1. make a list object and store it in var
+//2. using while loop 
+//3. write message for names /exit
+//4. store the input in var 
+//5 . break the app 
+// 6. add input to array 
+
+
+
+            var names = new List<string>();
+
+            while (true)
+            {
+                Console.Write("Type a name (or hit ENTER to quit): ");
+
+                var input = Console.ReadLine();
+                if (String.IsNullOrWhiteSpace(input))
+                    break;
+                names.Add(input);
+            }
+
+
+            if (names.Count > 2)
+                Console.WriteLine("{0}, {1} and {2} others like your post", names[0], names[1], names.Count - 2);
+            else if (names.Count == 2)
+                Console.WriteLine("{0} and {1} like your post", names[0], names[1]);
+            else if (names.Count == 1)
+                Console.WriteLine("{0} likes your post.", names[0]);
+            else
+                Console.WriteLine();
+        }
+      //  2- Write a program and ask the user to enter their name.
+      // Use an array to reverse the name and then store the result in a new string.
+      // Display the reversed name on the console.
+    }
+
+
+    }
+
+
     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
