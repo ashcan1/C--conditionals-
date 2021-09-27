@@ -1,6 +1,8 @@
 ﻿using System;
 using System.ComponentModel;
 using System.Diagnostics.Eventing.Reader;
+using System.Runtime.InteropServices;
+using System.Security.Cryptography;
 using System.Threading;
 
 namespace Conditionals
@@ -57,35 +59,136 @@ namespace Conditionals
              }
               */
 
-            Console.Write("Enter your speed limit :\t");
-            int speedLimit = int.Parse(Console.ReadLine());
+            // Console.Write("Enter your speed limit :\t");
+            // int speedLimit = int.Parse(Console.ReadLine());
+
+            //Console.Write("Enter your car speed :\t");
+            // int carSpeed = int.Parse(Console.ReadLine());
+
+
+
+            /*  if (speedLimit <= 50)
+  
+              {
+                  Console.WriteLine("ok");
+  
+  
+              }
+              else {
+                  const int KmPerDemertipoint = 5;
+                  var demeritPoint = (speedLimit - carSpeed) / KmPerDemertipoint;
+                  if (demeritPoint > 12)
+                      Console.WriteLine("License Suspended");
+                  else
+                      Console.WriteLine("Demerit points: " + demeritPoint);
             
-            Console.Write("Enter your car speed :\t");
-            int carSpeed = int.Parse(Console.ReadLine());
+  
+  */
+///////////////////////////////////////////////////////////
+            /// LOOPS/////////////////
+
+            //   1- Write a program to count how many numbers between 1 and 100 are divisible
+            // by 3 with no remainder. Display the count on the console.
+
+            /*  var count = 0;
+              for (var i = 1; i <= 100; i++)
+              {
+                  if (i % 3 == 0)
+                      count++;
+              }
+  
+              Console.WriteLine("There are {0} numbers divisible by 3 between 1 and 100.", count);
+              */
 
 
 
-            if (speedLimit <= 50)
-
-            {
-                Console.WriteLine("ok");
-
-
-            }
-            else {
-                const int KmPerDemertipoint = 5;
-                var demeritPoint = (speedLimit - carSpeed) / KmPerDemertipoint;
-                if (demeritPoint > 12)
-                    Console.WriteLine("License Suspended");
-                else
-                    Console.WriteLine("Demerit points: " + demeritPoint);
-          
+            //////////////////////////////////////////////////////////////////////////////////////
+//  Write a program and continuously ask the user to enter a
+// number or "ok" to exit. Calculate the sum of all the previously
+// entered numbers and display it on the console.
 
 
 
-            }
+            /* var sum = 0;
+             while (true)
+             {
+                 Console.Write("Enter a number (or 'ok' to exit): ");
+                 var input = Console.ReadLine();
+
+                 if (input.ToLower() == "ok")
+                     break;
+
+                 sum += Convert.ToInt32(input);
+             
+             Console.WriteLine("Sum of all numbers is: " + sum);
+         }
+
+ }
+     */
+
+            /////////////////////////////////////////////////////////////////////
+            /*4- Write a program that picks a random number between 1 and 10.
+                Give the user 4 chances to guess the number. If the user guesses the number,
+                 display “You won"; otherwise, display “You lost". (To make sure the program is behaving correctly,
+                you can display the secret number on the console first.)
+                */
+            var number = new Random().Next(1, 10);
+           Console.WriteLine("Secret is ... ");
+    
+           for (int i = 0; i < 4; i++)
+           {
+
+               Console.WriteLine("gusse the numebr");
+               var guss = Convert.ToInt32(Console.ReadLine());
+
+               if (number == guss)
+               {
+                   Console.WriteLine("you won");
+                   return;
+
+               }
+
+           }
+
+           Console.WriteLine("you lost ");
+   
+            
+            
+        }
+
+
+
+
+        }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+            
 
  
-        }
-    }
-}
+        
+    
